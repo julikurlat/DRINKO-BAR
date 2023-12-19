@@ -1,0 +1,42 @@
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+nav div a img {
+    height: 80px;
+}
+
+nav div a img:hover {
+    filter: invert(10%);
+}
+
+header nav div div {
+    font-size: 140%;
+    display: flex;
+    justify-content: right;
+}
+
+header nav ul a {
+    text-decoration: none;
+    margin: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul a:hover {
+    color: #cac9c9 !important;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}

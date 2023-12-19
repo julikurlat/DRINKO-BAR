@@ -1,0 +1,33 @@
+@import url(https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bahnschrift";
+
+}
+.wpp img {
+    height: 70px;
+    position: fixed;
+    bottom: 17px;
+    right: 17px;
+    z-index: 1000;
+}
+
+.wpp img:hover {
+    transform: scale(1.1);
+}
+.boton:active {
+    box-shadow: 0 0 10px 5px rgba(177, 177, 177, 0.486);
+    transition: 0.5 ease;
+}
+
+.boton:hover {
+    background-color: rgba(177, 177, 177, 0.486);
+    transition: 0.5 ease;
+    transform: scale(1.1);
+}
+
+$color-principal: white;
+

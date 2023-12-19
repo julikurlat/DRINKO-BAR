@@ -1,70 +1,3 @@
-/*RESET O ROOT*/
-@import url(https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Bahnschrift";
-
-}
-
-/*BODY*/
-.wpp img {
-    height: 70px;
-    position: fixed;
-    bottom: 17px;
-    right: 17px;
-    z-index: 1000;
-}
-
-.wpp img:hover {
-    transform: scale(1.1);
-}
-
-body {
-    overflow-x: hidden;
-}
-
-nav {
-    flex-direction: row-reverse;
-    background-color: rgba(0, 0, 0, 0.329);
-    z-index: 100;
-    position: sticky;
-    top: 0;
-}
-
-nav div a img {
-    height: 80px;
-}
-
-nav div a img:hover {
-    filter: invert(10%);
-}
-
-header nav div div {
-    font-size: 140%;
-    display: flex;
-    justify-content: right;
-}
-
-header nav ul a {
-    text-decoration: none;
-    margin: 12px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-header nav ul a:hover {
-    color: #cac9c9 !important;
-    transition: 0.3s ease;
-    transform: scale(1.1);
-}
-
-.navbar-toggler-icon {
-    filter: invert(100%);
-}
-
-/* INDEX*/
 /*HERO*/
 .hero-fondo {
     background-image: url(../IMG/fondo-home.jpg);
@@ -85,7 +18,7 @@ header nav ul a:hover {
 
 .titulo-index {
     margin-top: 80px;
-    color: white;
+    color:$color-principal;
     font-size: 5vw;
     width: 40%;
     margin-left: 13%;
@@ -97,7 +30,7 @@ header nav ul a:hover {
     font-size: 110%;
     text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
     width: 40%;
-    color: white;
+    color:$color-principal;
     margin-left: 13%;
     text-align: left;
     margin-bottom: 20%;
@@ -119,7 +52,7 @@ header nav ul a:hover {
 }
 
 .menuhome h2 {
-    color: white;
+    color:$color-principal;
     font-size: 5vw;
     margin-left: 0;
     width: 330px;
@@ -133,7 +66,7 @@ header nav ul a:hover {
     width: 190px;
     height: 60px;
     text-decoration: none;
-    color: white;
+    color:$color-principal;
     font-size: 20px;
     border-style: solid;
     padding: 1px;
@@ -163,7 +96,7 @@ header nav ul a:hover {
     left: 50%;
     width: 30%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color:$color-principal;
     font-size: 30px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -177,23 +110,6 @@ header nav ul a:hover {
 .contenedor-img:hover .gin {
     opacity: 1;
 }
-
-/*CAROUSEL
-#carouselExampleSlidesOnly {
-    transform: translateX(20%);
-    width: 40%;
-}
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-sizing: border-box;
-}
-.carousel-inner{
-width: 100%;
-overflow: hidden;
-}
-*/
 /*SUCURSALES SECTION*/
 .homesucursales {
     background-image: url(../IMG/camarero-byn.png);
@@ -208,7 +124,7 @@ overflow: hidden;
 }
 
 .homesucursales h2 {
-    color: white;
+    color:$color-principal;
     font-size: 5vw;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -220,7 +136,7 @@ overflow: hidden;
     width: 190px;
     height: 60px;
     text-decoration: none;
-    color: white;
+    color:$color-principal;
     font-size: 20px;
     border-style: solid;
     padding: 1px;
@@ -228,192 +144,6 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/*FOOTER*/
-footer {
-    background-color: #1A1A1A;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    height: 200px;
-    padding-left: 50px;
-    padding-right: 70px;
-
-}
-
-footer img {
-    height: 80%;
-}
-
-footer div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-footer div img {
-    height: 120px;
-}
-
-footer div h3 {
-    color: white;
-    font-weight: lighter;
-    font-size: 110%;
-}
-
-@media screen and (max-width: 1100px) {
-    .hero-fondo {
-        background-position: center;
-    }
-
-    .titulo-index {
-        font-size: 5vw;
-    }
-
-    .hero p {
-        font-size: 80%;
-    }
-
-    .menuhome {
-        background-image: url(../IMG/fondo-celu-menu.jpg);
-        display: flex;
-        align-items: center;
-        height: 600px;
-    }
-
-    .menuhome h2 {
-        width: 500px;
-    }
-
-    .menuhome h2,
-    .menuhome a {
-        margin-left: 0;
-    }
-
-    .menuhome div img {
-
-        display: none;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .titulo-index {
-        font-size: 350%;
-    }
-
-    .hero p {
-        font-size: 100%;
-        width: 50%;
-    }
-
-    .hero-fondo {
-        background-image: none;
-    }
-
-    .hero {
-        background-image: url(../IMG/fondo-home.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 600px;
-    }
-
-    nav {
-        background-color: black;
-    }
-
-    header nav div div {
-        justify-content: center;
-        margin-top: 3%;
-    }
-
-    nav div img {
-        padding-left: 40vw;
-    }
-
-    .wpp {
-        display: none;
-    }
-
-    .navbar-nav {
-        font-size: 80%;
-    }
-
-    nav div div ul {
-        text-align: center;
-    }
-
-    /*
-    .carrousel-margin{
-        margin-top: auto;
-        margin-left: 15%;
-        margin-top: 30px;
-    }
-    .carousel-item img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
-    */
-    footer {
-        flex-direction: column;
-        height: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    footer img {
-        width: 25vw;
-    }
-
-    footer div {
-        margin-top: 7%;
-        align-items: center;
-    }
-
-    footer div h3 {
-        font-size: 90%;
-    }
-
-    footer div a img {
-        width: 25vw;
-        height: auto;
-
-    }
-}
-
-@media screen and (max-width: 550px) {
-    nav div a img {
-        height: 50px;
-    }
-
-    .titulo-index {
-        width: 60%;
-    }
-
-    .hero p {
-        width: 60%;
-    }
-
-    .menuhome h2 {
-        width: 50%;
-    }
-    
-}
-
-
-.boton:active {
-    box-shadow: 0 0 10px 5px rgba(177, 177, 177, 0.486);
-    transition: 0.5 ease;
-}
-
-.boton:hover {
-    background-color: rgba(177, 177, 177, 0.486);
-    transition: 0.5 ease;
-    transform: scale(1.1);
 }
 
 /* MENU PAGE*/
@@ -430,7 +160,7 @@ footer div h3 {
     display: flex;
     justify-content: center;
     font-size: 6vw;
-    color: white;
+    color:$color-principal;
     margin-top: 20%;
 }
 
@@ -483,7 +213,7 @@ footer div h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color:$color-principal;
     font-size: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -493,16 +223,6 @@ footer div h3 {
 .fotoshover:hover .nombre-trago {
     opacity: 1;
 }
-
-@media screen and (max-width: 991px){
-.grilla-contenedor{ 
-    grid-template-columns: 1fr;
-}
-.fotoshover-container {
-    display: none;
-}
-}
-
 /* SUCURSALES PAGE*/
 .fondo-sucursales {
     background-image: url(../IMG/camarero-byn.png);
@@ -520,9 +240,11 @@ footer div h3 {
     margin-right: 8%;
     margin-bottom: 100px;
     gap: 3%;
+    align-items: center;
+    justify-content: center;
 }
 .mapa{
-width: 70%;
+width: 90vw;
 }
 /* RESERVAS PAGE*/
 .fondo-reservas {
@@ -553,7 +275,7 @@ width: 70%;
 }
 
 .reservas-main div h3{
-    color: white;
+    color:$color-principal;
     font-size: 5vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -566,7 +288,7 @@ width: 70%;
     width: 190px;
     height: 60px;
     text-decoration: none;
-    color: white;
+    color:$color-principal;
     font-size: 20px;
     border-style: solid;
     padding: 1px;
@@ -588,13 +310,13 @@ width: 70%;
 .franquicias-main{
     margin-left: 8%;
     margin-right: 8%;
-    margin-bottom: 100px;
 }
 .fondo-form{
     background-color: #ffffff;
     width: 100%;
-    height: 70%;
+    height: 50vw;
     margin-top: 15%;
+    margin-bottom: 10% ;
     display: flex;
     padding: 5%;
     gap: 40px;
@@ -603,12 +325,23 @@ width: 70%;
     text-align: left;
     width: 50%;
     line-height: 1.5;
+    font-size: 2.5vw;
 }
 
 .fondo-form h4{
     color: rgba(95, 87, 87, 0.486);
     margin-top: 6%;
+    font-size: 2vw;
 }
-.fondo-form input, .fondo-form textarea{
-width: 150%;
+
+.form input, .form textarea{
+width: 35vw;
+}
+
+.form input{
+height: 2.5vw;
+}
+.form textarea{
+    height: 12vw;
+
 }
