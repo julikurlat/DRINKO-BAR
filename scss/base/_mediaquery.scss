@@ -1,4 +1,5 @@
 
+
 @media screen and (max-width: 1100px) {
     .hero-fondo {
         background-position: center;
@@ -17,15 +18,23 @@
         display: flex;
         align-items: center;
         height: 600px;
+        justify-content: center;
+        margin-right: 20%;
     }
-
-    .menuhome h2 {
+    .menuhome .contenedor.img img{
+        display:none !important;
+    } 
+    .menuhome div{
+        justify-content: center;
+        align-items: center;
+    }
+    .menuhome div h2 {
         width: 500px;
     }
 
-    .menuhome h2,
+    .menuhome div h2,
     .menuhome a {
-        margin-left: 0;
+        margin-left: 0;   
     }
 
     .menuhome div img {
@@ -166,4 +175,3 @@
     }
 
 }
-

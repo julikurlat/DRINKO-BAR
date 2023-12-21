@@ -115,7 +115,7 @@ header nav ul a:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
 
 .menuhome a {
-  margin-right: 5%;
+  margin-left: 40px;
   margin-top: 40px;
   width: 190px;
   height: 60px;
@@ -414,12 +414,17 @@ footer div h3 {
     background-image: url(../IMG/fondo-celu-menu.jpg);
     display: flex;
     align-items: center;
-    height: 600px; }
+    height: 600px; 
+    justify-content: center;
+  }
+    
   .menuhome h2 {
     width: 500px; }
   .menuhome h2,
   .menuhome a {
-    margin-left: 0; }
+    text-align: center;
+  display: flex;
+  justify-content: center;}
   .menuhome div img {
     display: none; } }
 
@@ -502,3 +507,5 @@ footer div h3 {
     height: 1100px;
     background-position: bottom;
     margin-bottom: 0; } }
+
+    
