@@ -498,6 +498,9 @@ footer div h3 {
     width: 100%; }
   .form {
     width: 100%; }
+  .form input{
+    height: 5%;
+  }
   .form textarea, .form input {
     width: 100%; }
   .form textarea {
