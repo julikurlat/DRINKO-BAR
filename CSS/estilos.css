@@ -109,7 +109,7 @@ header nav ul a:hover {
 .menuhome h2 {
   color: white;
   font-size: 5vw;
-  margin-left: 0;
+  margin: 20px auto;
   width: 330px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
@@ -117,6 +117,7 @@ header nav ul a:hover {
 .menuhome a {
   margin-left: 40px;
   margin-top: 40px;
+  margin: 20px auto;
   width: 190px;
   height: 60px;
   text-decoration: none;
